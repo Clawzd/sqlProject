@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="530.0" prefWidth="766.0" style="-fx-background-color: #1b1b1b;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sqlproject.AdminController">
+
+    <children>
+        <VBox layoutX="375.0" layoutY="36.0" spacing="20" />
+
+                <Button fx:id="logoutButton" layoutX="260.0" layoutY="450.0" onAction="#onLogoutClick" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: #b00020; -fx-text-fill: white;" text="Logout" />
+      <ButtonBar layoutX="48.0" layoutY="83.0" prefHeight="85.0" prefWidth="264.0">
+         <buttons>
+            <Button mnemonicParsing="false" prefHeight="81.0" prefWidth="266.0" style="-fx-background-color: #00C853;" text=" Add a new race" />
+         </buttons>
+      </ButtonBar>
+      <Button layoutX="433.0" layoutY="87.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="266.0" style="-fx-background-color: #D50000;" text="Delete an owner" />
+      <Button layoutX="60.0" layoutY="227.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="254.0" style="-fx-background-color: #00B0FF;" text="Move  horse" />
+      <Button layoutX="426.0" layoutY="225.0" mnemonicParsing="false" prefHeight="81.0" prefWidth="266.0" style="-fx-background-color: #FFD700;" text="Approve a new trainer" />
+    </children>
+</AnchorPane>
