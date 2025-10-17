@@ -36,4 +36,18 @@ public class HelloController {
             System.out.println("Invalid credentials");
         }
     }
+    @FXML
+    private void GuestFu(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("guest.fxml"));
+        Scene scene = new Scene(loader.load());
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setScene(scene);
+        stage.setTitle("Guest Panel");
+        stage.show();
+    }
+
+
+
+
+
 }

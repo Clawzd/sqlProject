@@ -2,29 +2,20 @@ package com.example.sqlproject;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.Statement;
 
 public class DatabaseConnection {
-    public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/horse_racing";
-        String user = "root";
-        String password = "";
 
+    public Connection connect() {
+        Connection connection = null;
         try {
+            String url = "jdbc:mysql://localhost:3306/horse_racing";
+            String user = "root";
+            String password = "";
 
-            Connection conn = DriverManager.getConnection(url, user, password);
-            System.out.println("Connected successfully to horse_racing");
-
-
-
-
-            conn.close();
-            System.out.println("Connection closed successfully.");
-
+            connection = DriverManager.getConnection(url, user, password);
         } catch (Exception e) {
-            System.out.println("Error: " + e.getMessage());
             e.printStackTrace();
         }
+        return connection;
     }
 }
